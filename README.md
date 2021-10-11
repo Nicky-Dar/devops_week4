@@ -29,10 +29,12 @@ For install git on linux input this command:
 
 ![image](https://user-images.githubusercontent.com/88620315/136655374-7f47ced4-55ac-49a6-ae54-3ca2478b3cab.png)
 
-
+for check the version of git we can use this command
 > git –version
 
 ![image](https://user-images.githubusercontent.com/88620315/136655377-ea401249-73c9-48a6-92d8-5b8c9b0063f6.png)
+
+the next step is git configuration for make connection bridge to the github server
 
 > git config  --global user.name “Nicky-Dar”
 
@@ -110,3 +112,70 @@ File1 and folder1 are not displayed because they are included in .gitignore so t
 ![image](https://user-images.githubusercontent.com/88620315/136658033-988d11e4-cc22-47aa-a5b3-3d93e114ed67.png)
 
 
+## Web Server and Load Balancing
+### Web Server
+Web server is a software (software) that provides services in the form of data. Serves to receive HTTP or HTTPS requests from clients or we are familiar with web browsers (Chrome, Firefox). Then he will send a response to the request to the client in the form of a web page.
+If we talk in detail, then the Web Server has a role in processing various data requested by the client (web browser). Then he gives results or answers in the form of documents, videos, photos, or various other forms of files.
+As for we break down into several parts of the function of the web server:
+
+•	Clean up various caches in storage as well as all documents that are no longer used.
+•	Checking the security system originating from HTTP requests based on client requests or web browsers.
+•	Provide data based on incoming requests or requests in order to ensure system security that runs smoothly.
+
+Jenis-jenis web server:
+* Apache
+* Nginx
+* IIS
+* Lightspeed
+* Lighttpd
+* 
+
+#### Nginx
+Nginx is a web server with reliable performance and has several other powerful features that are easy to configure. As a result, Nginx is able to make your website more powerful and sophisticated.
+>sudo apt install nginx -y
+
+>nginx -v
+![image](https://user-images.githubusercontent.com/88620315/136722506-39a70629-cbae-4825-893c-59fae433cd1a.png)
+
+To display the status of nginx, you can use the following command
+>sudo systemctl status nginx
+
+![image](https://user-images.githubusercontent.com/88620315/136722577-2ba2bc43-2bf1-4171-9bb7-6f6be2ccb435.png)
+
+### Reserve proxy
+This reverse proxy is a feature/module in a webserver, which functions to port forward a request, from a public request to the system. As a proxy, of course, it also has content caching capabilities, namely temporary data storage, so that when a re-request occurs, there is no need to retrieve it from the database.
+
+>cd /etc/nginx/
+
+![image](https://user-images.githubusercontent.com/88620315/136724491-d9fe1ccd-c9d2-489e-85c0-cfc50bb89505.png)
+
+>sudo mkdir [directory]
+
+![image](https://user-images.githubusercontent.com/88620315/136724644-6c5cb6d9-f2b7-4463-903f-15b1fcc9d431.png)
+
+next you can config the nginx with
+
+> sudo nano /etc/nginx/nginx.conf
+
+![image](https://user-images.githubusercontent.com/88620315/136724764-15e5b13b-3706-41ff-adb2-b7b1e00f9c0b.png)
+
+
+after you make the configuration, open the directory and make the app reverse proxy.
+
+![image](https://user-images.githubusercontent.com/88620315/136727463-4e4bc691-56f9-42d6-9b91-50136bd93327.png)
+ for test the 
+> sudo nginx -t
+
+![image](https://user-images.githubusercontent.com/88620315/136727605-b20eb49b-5739-45c7-930a-841d2b63bde1.png)
+
+> Sudo nano /etc/hosts
+
+![image](https://user-images.githubusercontent.com/88620315/136727804-6ea79563-1b56-435b-9a27-51968fcef6a4.png)
+
+>sudo systemctl restart/reload nginx
+
+Restart nginx will make nginx shutdown first with 
+reload nginx dont need to shutdown.
+
+![image](https://user-images.githubusercontent.com/88620315/136727956-1a4cd748-974f-42bf-b306-d108a6fa58fd.png)
+![image](https://user-images.githubusercontent.com/88620315/136727964-c885e112-d068-47f4-bb3f-fc0c3ece0548.png)
