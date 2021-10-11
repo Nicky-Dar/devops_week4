@@ -80,10 +80,10 @@ File1 and folder1 are not displayed because they are included in .gitignore so t
 
 ![image](https://user-images.githubusercontent.com/88620315/136657817-d1c36bb4-6761-4d1b-9b04-fececc2bbc47.png)
 
-
+### Git Remote
 ![image](https://user-images.githubusercontent.com/88620315/136657830-fc143186-5307-4c7f-89db-b2a37f4f747d.png)
 
-### Git Remote
+
 ![image](https://user-images.githubusercontent.com/88620315/136657845-8685fb32-a477-4d94-a857-2ac13ebf4727.png)
 
 
