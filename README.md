@@ -89,7 +89,7 @@ File1 and folder1 are not displayed because they are included in .gitignore so t
 
 ![image](https://user-images.githubusercontent.com/88620315/136657855-3965b14c-060b-46b6-9242-218020b0c181.png)
 
-
+### Git Remote
 ![image](https://user-images.githubusercontent.com/88620315/136657866-12cb2997-890a-4b6a-9d3b-d369f07e42a5.png)
 
 
@@ -106,6 +106,26 @@ File1 and folder1 are not displayed because they are included in .gitignore so t
 
 
 ![image](https://user-images.githubusercontent.com/88620315/136657954-88fc2c4b-20e9-4a1d-b8b8-3a88a3dd1d25.png)
+
+During the development cycle, a variety of supporting branches are used:
+
+feature-* (development)— feature branches are used to develop new features for the upcoming releases. May branch off from develop and must merge into develop.
+
+hotfix-*(stagging) — hotfix branches are necessary to act immediately upon an undesired status of master. May branch off from master and must merge into master and develop.
+
+release-*(production) — release branches support preparation of a new production release. They allow many minor bug to be fixed and preparation of meta-data for a release. May branch off from develop and must merge into master and develop.
+
+Would this be a correct workflow:
+Git clone repo
+Git checkout staging branch
+Git pull origin staging
+Git create and checkout new feature branch
+Git checkout staging branch and merge
+Git push to repo
+On staging server
+Git checkout staging
+Git pull origin staging
+
 
 #### Git Pull
 
