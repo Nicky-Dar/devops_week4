@@ -83,13 +83,13 @@ File1 and folder1 are not displayed because they are included in .gitignore so t
 
 ![image](https://user-images.githubusercontent.com/88620315/136657830-fc143186-5307-4c7f-89db-b2a37f4f747d.png)
 
-
+### Git Remote
 ![image](https://user-images.githubusercontent.com/88620315/136657845-8685fb32-a477-4d94-a857-2ac13ebf4727.png)
 
 
 ![image](https://user-images.githubusercontent.com/88620315/136657855-3965b14c-060b-46b6-9242-218020b0c181.png)
 
-### Git Remote
+
 ![image](https://user-images.githubusercontent.com/88620315/136657866-12cb2997-890a-4b6a-9d3b-d369f07e42a5.png)
 
 
